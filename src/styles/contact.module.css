@@ -1,0 +1,83 @@
+.ContactUsPrimary {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.ContactUsPrimary > * + * {
+  margin-left: 50px;
+}
+.ContactUs_image {
+  flex: 0.8;
+
+  display: flex;
+}
+.ContactUs_image img {
+  height: 100%;
+  width: 100%;
+}
+.ContactUs_description {
+  flex: 1;
+  color: var(--brandHover);
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.ContactUs_description_Primary {
+  margin: 0 auto;
+}
+.ContactUs_description h4 {
+  padding: 0 60px;
+  color: var(--red);
+}
+.ContactUs_description_Primary > * + * {
+  margin-top: 20px;
+}
+
+.ContactUs_description_email_button {
+  background-color: var(--red);
+  text-decoration: none;
+  color: var(--white);
+  padding: 10px 56px;
+  border: none;
+  font-size: var(--font16);
+  border-radius: 12px;
+}
+.ContactUs_description_email_button:hover {
+  color: var(--brand) !important;
+
+  background: linear-gradient(163deg, var(--red), var(--brandHover));
+}
+.ContactUs_description_address_info,
+.ContactUs_description_phone,
+.ContactUs_description_email {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 0 60px;
+}
+.ContactUs_description_address_info > * + * {
+  margin-top: 5px;
+}
+.ContactUs_description_address_info_title {
+  margin-bottom: 10px !important;
+  color: var(--red);
+}
+/* media Queeries */
+@media (max-width: 900px) {
+  .ContactUs_image {
+    display: none;
+  }
+  .ContactUsPrimary > * + * {
+    margin-left: 0px;
+  }
+  .ContactUs_description_address_info,
+  .ContactUs_description_phone,
+  .ContactUs_description_email {
+    padding: 0;
+  }
+  .ContactUs_description h4 {
+    padding: 0;
+  }
+}

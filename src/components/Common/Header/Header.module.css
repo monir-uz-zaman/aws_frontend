@@ -1,0 +1,11 @@
+.container {
+  padding: var(--size-small) var(--size-small) 0 var(--size-medium);
+  text-transform: capitalize;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-weight: 500;
+}

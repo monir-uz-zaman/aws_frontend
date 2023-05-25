@@ -1,0 +1,14 @@
+.customIndicator {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--brand);
+  margin-right: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.customIndicator.selected {
+  background-color: var(--red);
+}

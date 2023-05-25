@@ -1,0 +1,28 @@
+/* // modal */
+.overlay-search-modal {
+  /* // navbar item z-index is 100 */
+  z-index: 101 !important;
+  position: absolute;
+  inset: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  max-height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.search-modal {
+  border: none;
+  padding: 50px 20px;
+  transition: all var(--speed) ease-in-out;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--background);
+  position: absolute;
+  height: 400px;
+  outline: none;
+  max-width: 800px;
+
+  width: 100%;
+}

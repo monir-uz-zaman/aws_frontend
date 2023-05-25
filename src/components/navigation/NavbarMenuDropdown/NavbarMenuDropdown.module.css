@@ -1,0 +1,93 @@
+.menuTrigger,
+.menuContainer {
+  position: relative !important;
+}
+
+.menuTrigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* // user name */
+.title {
+  margin: 20px 0;
+  text-align: center;
+  color: var(--red);
+}
+
+/* // icon of user */
+
+.menuTrigger img {
+  top: -20px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: var(--white);
+}
+/* // dropdown container */
+.dropdown-menu {
+  position: absolute;
+  top: 50px;
+  right: -10px;
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  padding: 10px;
+  width: 200px;
+}
+
+.dropdown-menu::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: 20px;
+  height: 20px;
+  width: 20px;
+  background: var(--white);
+  transform: rotate(45deg);
+}
+/* // when open */
+.activeDropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: var(--speed) ease;
+}
+/* // when closed */
+.inactiveDropdown {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: var(--speed) ease;
+}
+
+/* // dropdown conainer when opened */
+.dropdownItemsContainer {
+  padding: 10px 0;
+  border-top: 1px solid var(--background);
+  gap: 20px;
+  flex-direction: column;
+  display: flex;
+}
+/* // on hover of dropdown item */
+.dropdownItemsContainer a:hover {
+  color: var(--red);
+  cursor: pointer;
+}
+
+.dropdown-menu a:hover svg {
+  opacity: 1;
+  cursor: pointer;
+}
+/* // dropdown item like logout profile */
+.dropdownItem {
+  display: flex;
+}
+/* // dropdown item icon like icon beside profile */
+.dropdownItem svg {
+  max-width: 16px;
+  margin-right: 10px;
+  opacity: 0.5;
+  transition: var(--speed);
+}

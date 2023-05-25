@@ -1,0 +1,185 @@
+/* PADDDING BETWEEN ITEMS */
+.image-item {
+  padding: 20px;
+}
+
+.slide {
+  padding: 0 5px;
+}
+
+/* RIGHT AND LEFT ARROW CSS */
+.custom-right-arrow,
+.custom-left-arrow,
+.custom-left-arrow-vod-banner,
+.custom-right-arrow-vod-banner {
+  position: absolute !important;
+  z-index: 2;
+  border: 2px solid var(--brand);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 12px;
+  opacity: 0.8;
+  cursor: pointer;
+
+  overflow: visible !important;
+  height: 30px;
+}
+
+.custom-right-arrow,
+.custom-right-arrow-vod-banner {
+  transform: rotate(-45deg);
+}
+
+.custom-left-arrow,
+.custom-left-arrow-vod-banner {
+  transform: rotate(135deg);
+}
+
+.custom-right-arrow {
+  right: -35px !important;
+}
+.custom-right-arrow:hover {
+  opacity: 1;
+}
+.custom-left-arrow {
+  left: -35px !important;
+}
+.custom-left-arrow {
+  opacity: 1;
+}
+/* RIGHT AND LEFT ARROW ends for assets CSS */
+
+/* RIGHT AND LEFT ARROW ends for vod banner CSS starts */
+
+.custom-left-arrow-vod-banner {
+  left: calc(10% - 35px - 5px);
+
+  top: 40%;
+}
+.custom-right-arrow-vod-banner {
+  right: calc(10% - 35px - 5px);
+  top: 40%;
+}
+
+/* RIGHT AND LEFT ARROW ends for vod banner CSS ends */
+
+/* MAKING RIGHT AND LEFT ICON VISIBLE for asseta carousel starts here */
+
+.react-multi-carousel-list {
+  margin: 0 auto;
+  overflow: visible !important;
+}
+
+.react-multi-carousel-list:after,
+.react-multi-carousel-list:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  background: var(--background);
+  z-index: 1;
+}
+
+.react-multi-carousel-list:before {
+  right: 100%;
+}
+
+.react-multi-carousel-list:after {
+  left: 99.9%;
+}
+/* MAKING RIGHT AND LEFT ICON VISIBLE for asseta carouselm ends here */
+
+/* // vod banner carousel */
+
+.control-dots {
+  bottom: -50px !important;
+}
+
+.carousel.carousel-slider {
+  overflow: visible !important;
+}
+
+/* // more than 1640px */
+@media (min-width: 1640px) {
+  .custom-right-arrow,
+  .custom-left-arrow-vod-banner,
+  .custom-right-arrow-vod-banner,
+  .custom-left-arrow {
+    padding: 32px;
+  }
+  .custom-right-arrow {
+    right: -55px !important;
+  }
+
+  .custom-left-arrow {
+    left: -55px !important;
+  }
+  /* // add more 5px cause there is 10px padding in asset item carousel */
+
+  .custom-left-arrow-vod-banner {
+    left: calc(10% - 55px - 5px);
+  }
+  .custom-right-arrow-vod-banner {
+    right: calc(10% - 55px - 5px);
+  }
+}
+
+/* // less than 1440px */
+@media (max-width: 1440px) {
+  .custom-right-arrow,
+  .custom-left-arrow-vod-banner,
+  .custom-right-arrow-vod-banner,
+  .custom-left-arrow {
+    padding: 16px;
+  }
+  .custom-right-arrow {
+    right: -35px !important;
+  }
+
+  .custom-left-arrow {
+    left: -35px !important;
+  }
+  .custom-left-arrow-vod-banner {
+    /* // add more 5px cause there is 10px padding in asset item carousel */
+    left: calc(10% - 35px - 5px);
+  }
+  .custom-right-arrow-vod-banner {
+    right: calc(10% - 35px - 5px);
+  }
+}
+
+/* // lessa than 768px */
+@media (max-width: 768px) {
+  .custom-right-arrow,
+  .custom-left-arrow-vod-banner,
+  .custom-right-arrow-vod-banner,
+  .custom-left-arrow {
+    padding: 12px;
+  }
+}
+
+/* // lessa than 450px */
+@media (max-width: 549px) {
+  .custom-left-arrow,
+  .custom-right-arrow,
+  .custom-right-arrow-vod-banner,
+  .custom-left-arrow-vod-banner {
+    padding: 8px;
+    height: 10px !important;
+  }
+  .custom-right-arrow {
+    right: -15px !important;
+  }
+
+  .custom-left-arrow {
+    left: -15px !important;
+  }
+  .custom-left-arrow-vod-banner {
+    left: calc(10% - 15px - 5px);
+  }
+  .custom-right-arrow-vod-banner {
+    right: calc(10% - 15px - 5px);
+  }
+}

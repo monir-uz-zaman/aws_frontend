@@ -1,0 +1,88 @@
+.input_container {
+  position: relative;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.input_container input {
+  padding: 1.5rem 2.5rem 0.5rem 1rem !important;
+}
+
+.input_text {
+  font-family: inherit;
+
+  padding: 0.9rem;
+  border: none;
+  border-radius: 1rem;
+  background: var(--white);
+  width: 100%;
+  appearance: none;
+  height: 50px;
+}
+.input_text:focus {
+  outline-color: var(--brand);
+}
+
+.input_container_label {
+  pointer-events: none;
+
+  position: absolute;
+  top: 1.3rem;
+  left: 1rem;
+  color: var(--brandHover);
+  font-weight: 500;
+
+  transition: all 0.2s;
+  transform-origin: left;
+  top: 50%;
+  bottom: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input_text:not(:placeholder-shown) + .input_container_label,
+.input_text:focus + .input_container_label {
+  top: 0.3rem;
+  transform: scale(0.8);
+}
+.input_text:focus + .input_container_label {
+  color: var(--brand);
+}
+
+.input_icon {
+  position: absolute;
+  top: 1.3rem;
+  right: 2rem;
+  color: #00000070;
+}
+
+/* // invalid form input */
+.formInputInvalid input {
+  outline-color: var(--red);
+  border: 2px solid var(--red) !important;
+}
+/* // error text */
+.errorText {
+  color: var(--red);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -10px;
+  margin-bottom: 5px;
+}
+.errorText::before {
+  content: "⚠  \00a0  ";
+}
+
+@media (max-width: 550px) {
+  .input_text {
+    height: 40px;
+    padding: 0.5rem 1rem;
+  }
+
+  .formPrimary {
+    width: 100%;
+
+    margin-top: 0;
+  }
+}
