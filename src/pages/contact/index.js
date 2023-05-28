@@ -50,8 +50,9 @@ export default function ContactUs() {
             flex: 1.5,
           }}
         >
-          {ALL_EMPLOYEES.map((el) => (
+          {ALL_EMPLOYEES.map((el, index) => (
             <div
+              key={el.label + index}
               style={{
                 flexDirection: "column",
               }}
