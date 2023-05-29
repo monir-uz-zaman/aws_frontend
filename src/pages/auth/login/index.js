@@ -42,6 +42,7 @@ const Login = () => {
         }
       );
       if (res?.status === 200) {
+        CustomToast("Welcome to Foodin. Get fresh be healthy", "success");
         router.push(returnUrl);
       } else {
         CustomToast(
