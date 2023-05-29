@@ -13,6 +13,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { getImageByKey } from "@/utils/getImageBykey";
 import Image from "next/image";
+import { getBaseURL } from "@/lib/getBaseRoute";
 
 const DROPDOWN_ITEMS = [
   // {
@@ -30,7 +31,7 @@ const DROPDOWN_ITEMS = [
     href: "/",
     icon: <FontAwesomeIcon icon={faRightFromBracket} />,
     onClick: () => {
-      signOut();
+      signOut({ callbackUrl: getBaseURL });
     },
   },
 ];
