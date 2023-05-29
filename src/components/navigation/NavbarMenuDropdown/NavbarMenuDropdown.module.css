@@ -53,6 +53,7 @@
   visibility: visible;
   transform: translateY(0);
   transition: var(--speed) ease;
+  background-color: #e4dcdc;
 }
 /* // when closed */
 .inactiveDropdown {
