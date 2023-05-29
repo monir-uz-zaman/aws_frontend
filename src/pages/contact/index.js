@@ -47,7 +47,7 @@ export default function ContactUs() {
           style={{
             display: "flex",
             flexWrap: "wrap",
-            flex: 1.5,
+            flex: 2,
           }}
         >
           {ALL_EMPLOYEES.map((el, index) => (
