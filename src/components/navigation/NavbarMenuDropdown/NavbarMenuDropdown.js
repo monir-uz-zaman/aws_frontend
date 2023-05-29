@@ -13,7 +13,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { getImageByKey } from "@/utils/getImageBykey";
 import Image from "next/image";
-import { getBaseURL } from "@/lib/getBaseRoute";
+import { getBaseRoute } from "@/lib/getBaseRoute";
 
 const DROPDOWN_ITEMS = [
   // {
