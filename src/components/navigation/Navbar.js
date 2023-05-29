@@ -21,6 +21,7 @@ const Navbar = ({ secondaryPage = true }) => {
   const MENU_LIST = [
     { text: "Home", href: "/" },
     { text: "Contact", href: "/contact" },
+    { text: "Products", href: "/products" },
     // { text: "Employee Info", href: "/employee-info" },
   ];
 
