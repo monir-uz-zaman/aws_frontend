@@ -31,7 +31,7 @@ const DROPDOWN_ITEMS = [
     href: "/",
     icon: <FontAwesomeIcon icon={faRightFromBracket} />,
     onClick: () => {
-      signOut({ callbackUrl: getBaseURL });
+      signOut();
     },
   },
 ];
