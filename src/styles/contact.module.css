@@ -81,3 +81,9 @@
     padding: 0;
   }
 }
+
+.productDiv {
+  flex-direction: column;
+  border: 2px solid #e5e5e5;
+  box-shadow: 4px 4px #e5e5e5;
+}

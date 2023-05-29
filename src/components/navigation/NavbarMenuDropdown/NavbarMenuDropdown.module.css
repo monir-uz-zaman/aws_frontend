@@ -46,6 +46,7 @@
   width: 20px;
   background: var(--white);
   transform: rotate(45deg);
+  background-color: #e4dcdc;
 }
 /* // when open */
 .activeDropdown {
@@ -66,7 +67,7 @@
 /* // dropdown conainer when opened */
 .dropdownItemsContainer {
   padding: 10px 0;
-  border-top: 1px solid var(--background);
+  /* border-top: 1px solid var(--background); */
   gap: 20px;
   flex-direction: column;
   display: flex;
