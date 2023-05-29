@@ -37,7 +37,7 @@ const LoginForm = ({ state, InputHandler, formSubmitHandler, loading }) => {
           id="EMAIL"
           label={"Employee ID"}
           placeholder={"Enter your id here"}
-          type="text"
+          type="number"
           element="input"
           validators={[VALIDATOR_REQUIRE()]}
           errorText={"Enter id"}
