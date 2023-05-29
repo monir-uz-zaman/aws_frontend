@@ -17,6 +17,14 @@ import contact4 from "../constants/assets/images/contact/4.jpeg";
 import contact5 from "../constants/assets/images/contact/5.jpeg";
 import contact6 from "../constants/assets/images/contact/6.jpeg";
 
+import product1 from "../constants/assets/images/products/product 1.png";
+import product2 from "../constants/assets/images/products/product 2.png";
+import product3 from "../constants/assets/images/products/product 3.png";
+import product4 from "../constants/assets/images/products/product 4.jpg";
+import product5 from "../constants/assets/images/products/product 5.jpg";
+import product6 from "../constants/assets/images/products/product 6.png";
+import product7 from "../constants/assets/images/products/product 7.png";
+
 const images = {
   organization_logo,
   login_background,
@@ -33,6 +41,13 @@ const images = {
   contact4,
   contact5,
   contact6,
+  product1,
+  product2,
+  product3,
+  product4,
+  product5,
+  product6,
+  product7,
 };
 
 const getImageByKey = (key) => {
